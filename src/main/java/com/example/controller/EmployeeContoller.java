@@ -52,6 +52,8 @@ public class EmployeeContoller {
 	@PutMapping("/update")
 	public ResponseEntity<?> updateEmp(@RequestBody EmployeeDTO emp) {
 		
+		System.out.println("hi");
+		
 		empService.updateEmployee(emp);
 
 		return new ResponseEntity<String>("success", HttpStatus.OK);
