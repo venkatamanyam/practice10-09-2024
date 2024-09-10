@@ -52,7 +52,7 @@ public class EmployeeContoller {
 	@PutMapping("/update")
 	public ResponseEntity<?> updateEmp(@RequestBody EmployeeDTO emp) {
 		
-		System.out.println("hiii");
+		System.out.println("hiiiiiiiiiii");
 		
 		empService.updateEmployee(emp);
 
