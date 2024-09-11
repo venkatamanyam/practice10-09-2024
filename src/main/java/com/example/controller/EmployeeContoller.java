@@ -26,7 +26,7 @@ public class EmployeeContoller {
 	
 	@GetMapping("/all")
 	public ResponseEntity<?> getAllEmps() {
-
+                System.out.println("I am  C Branch");
 		List<Employee> allEmps = empService.showAllEmps();
 		
 		return new ResponseEntity<List<Employee>>(allEmps, HttpStatus.OK);
