@@ -27,6 +27,7 @@ public class EmployeeContoller {
 	@GetMapping("/all")
 	public ResponseEntity<?> getAllEmps() {
                 System.out.println("First method");
+		System.out.println("second method");
 		List<Employee> allEmps = empService.showAllEmps();
 		
 		return new ResponseEntity<List<Employee>>(allEmps, HttpStatus.OK);
